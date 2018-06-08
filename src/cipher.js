@@ -15,10 +15,13 @@ function cifrado (mensaje, n){
     }
     resultado+=String.fromCharCode(code);
   }
+
   return resultado;
+
+  const imprimir=resul()
+function resul(){
+var imprime = document.getElementById("cifrar").value;
+document.getElementById("mensaje").innerHTML=(cifrado(imprime),n);
+
 }
-   const imprimir=resul()
- function resul(){
- var imprime = document.getElementById("cifrar").value;
- document.getElementById("mensaje").innerHTML=(cifrado(imprime),n);
-}
+   }
