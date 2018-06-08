@@ -1,36 +1,25 @@
-<!DOCTYPE html>
-<html>
+
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>cifrado cesar</title>
   </head>
   <body>
-    <div id="root"></div>
+    <h1>mensaje</h1>
+    <div id= "titulo">
+ <input type="text" id="mensaje">
+      <input type="text" id="n" name="numero de posiciones">
 
-    <!--pedir el mensaje-->
-    <div id="pedirMensaje">
+          <button type= "button" id= "cifrar" onclick= "cifrado()">cifrar</button>
 
-        <input id="mensaje" type="text"><p id= "imprimir"></p>
 
-    </div>
+  <input type="text" id="mensaj">
 
-    <!--pedir cuantas posiciones quiere que se recorra-->
-    <div id="pedirPosicion">
-
-          <input id="posiciones" type="number" max="10" min="1">
-          <!--un botòn para ejecutar la funcion-->
-          <button id="boton1" type="button" onclick="encode()">cifrar</button>
-    </div>
-
-    <!--imprimir mensaje cifrado y decifrado-->
-    <div id=imprimirmensaje>
-          <button id="boton2" type="button" onclick="imprimirCodigo()"></button>
-
-    </div>
-
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+          <button type= "button" onclick=
+                  "descifrado()">descifrar</button>
 
   </body>
+  <script type="text/javascript"src=triv.js>
+
+  </script>
 </html>
