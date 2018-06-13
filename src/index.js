@@ -1,25 +1,26 @@
-let mensaje=document.getElementById("mensaje").value;
-let posiciones=document.getElementById("posiciones").value;
-const cifrar=(posiciones,mensaje) =>{
+//almacenamos en una variable el mensaje ingresado por el usuario
+let message=document.getElementById("message");
+//creamos una variable para llamar el string ingresado para descifrar
+let newMessage=document.getElementById("newMessage");
+let boton=document.getElementById("encriptar");
+let print=document.getElementById("encrypt");
+let boton2=document.getElementById("buttondescipher");
 
-let resultado = "";
-let cifrado = resultado;
+//declaramos una variable para almacenar el string retornado al encriptar y otra para poder trabajarlo como number
+//let result= "";
+//let code = result;
+//let result2= "";
+//let code2 = result2;
 
-  for (let i=0; i<mensaje.length;i++){
+//declaramos una variable para almacenar el string retornado al encriptar y otra para poder trabajarlo como number
+boton.addEventListener("click",encriptar);
+//creamos una variable para llamar al boton2 descifrar
+boton2.addEventListener("click",printDecryptedText);
 
-                    if (mensaje.charCodeAt(i)>=65 && mensaje.charCodeAt(i)<=90){
-                      cifrad=(((mensaje.charCodeAt(i)-65)+posiciones)%26)+65;  }
+function encriptar(){
+  encrypt.innerHTML=window.cipher.cipher(resultado);
+}
 
-
-                    else if (mensaje.charCodeAt(i)>=97 && mensaje.charCodeAt(i)<=122){
-                      cifrado = (((mensaje.charCodeAt(i)-97)+posiciones)%26)+97;}
-
-                    else if (mensaje.charCodeAt(i)>=32 && mensaje.charCodeAt(i)<=64){
-                      cifrado = (((mensaje.charCodeAt(i)-32)+posiciones)%26)+32;}
-
-  resultado+=String.fromCharCode(cifrado);
-
-                                      }
-                                      return resultado;
-                                      }
-console.log(cifrar(posiciones,mensaje));
+function printDecryptedText(){
+  alert("funciona");
+}
