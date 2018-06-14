@@ -1,23 +1,28 @@
-//almacenamos en una variable el mensaje ingresado por el usuario
-let message=document.getElementById("message");
-//creamos una variable para llamar el string ingresado para descifrar
-let newMessage=document.getElementById("newMessage");
+//se crea una variable que llama al boton
 let boton=document.getElementById("buttoncipher");
-let print=document.getElementById("encrypt");
+//se crea una variable que llama al boton descifrar
 let boton2=document.getElementById("buttondescipher");
-let print2=document.getElementById("decrypt");
+
+
 //declaramos una funcion para imprimir resultado de cipher
-function encriptar(){
-  let mensaje=message.value;
-  print.innerHTML=window.cipher.cipher(mensaje);
+const encryptMessage = () =>{
+  //declaramos variable dentro de la funcion para guardar el valor "string" ingresado por el usuario
+  let message=document.getElementById("message").value;
+  //declaramos una variable para almacenar el resultado retornado del elemento funcion cipher del objeto window.cipher
+ let print1=window.cipher.cipher(message);
+  //imprimimos en la variable print el resultado de la funcion elemento del objeto window.cipher con parametro mensaje
+  document.getElementById("encrypt").innerHTML=print1;
 }
+
 //declaramos una funcion para imprimir resultado de descipher
-function descifrar(){
-  let nuevoMensaje=newMessage.value;
-  let imprime1=window.cipher.descipher(newMessage);
-  document.getElementById('encrypt').innerHTML=imprime1;
+const decryptMessage = () =>{
+  //declaramos variable para almacenar el valor "string" ingresado por el usuario
+  let newMessage=document.getElementById("newMessage").value;
+  //declaramos una variable para almacenar el resultado retornado del elemento funcion descipher del objeto window.cipher
+  let print2=window.cipher.descipher(newMessage);
+  //se imprime en "encrypt" el valor de la variable imprime1
+  document.getElementById("decrypt").innerHTML=print2;
 }
-//declaramos una variable para almacenar el string retornado al encriptar y otra para poder trabajarlo como number
-boton.addEventListener("click",encriptar);
+boton.addEventListener("click",encryptMessage);
 //creamos una variable para llamar al boton2 descifrar
-boton2.addEventListener("click",descifrar);
+boton2.addEventListener("click",decryptMessage);
