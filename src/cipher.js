@@ -57,7 +57,8 @@ descipher:(str2) =>{
         let num=str2.charCodeAt(i);
         let a=num+65;
         let b=num+97;
-        let c=num+33;
+        let c=num-32
+        ;
 
           //se genera un for para el caso en que las letras son mayusculas
           if (num>=65 && num<=90){
@@ -75,9 +76,9 @@ descipher:(str2) =>{
              code2 = 32;
            console.log(code2);}
            //se genera un for para el caso en que hay caracteres especiales
-           else if (num>=33 && num<=64){
+           else if (num>=32 && num<=64){
           //code2 = ((c-position) % 26) + 33;
-          code2 = ((c+position) % 26) + 33;
+          code2 = ((c+position) % 26) + 32;
              console.log(code2);
           }
 
