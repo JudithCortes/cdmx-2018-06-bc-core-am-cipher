@@ -8,11 +8,20 @@
   <body>
          <h1>Cifrado Cesar</h1>
 
+         <div id=ventana3>
+              <!--el usuario debe INGRESA MENSAJE CIFRADO, se inserta un cuadro de ingreso de texto-->
+              <div id=dialogo3><input id="newMessage" type="text"></div>
+              <!-- se imprime el MENSAJE DESIFRADO en un parrafo-->
+             <div id="dialogo4"><p id="decrypt"></p></p></div>
+        </div>
+        <!--se crea el botòn para LLAMAR A LA FUNCION que imprime el resultado de la fincion descifra-->
+        <br><button id="buttondescipher">descifrar</button></br>
+
          <div id="ventana1">
               <!--el usuario debe ingresar su mensaje, se inserta un cuadro de INGRESO TEXTO-->
-              <div id="dialogo1"><input id="message" type="text"></div>
+              <div id="dialogo1"><input id="message" type="text">
               <!-- se imprime el MENSAJE DE RETORNO DESIFRADO en un parrafo-->
-              <div id="dialogo6"><p id="decryptRet"></p></p></div>
+              <div id="dialogo6"><p id="decryptRet"></p></p></div></div>
          </div>
          <!--se crea el botòn para evento que llama a la funcion que imprime el resultado retornado de window.cipher.cipher -->
          <br><button id="buttoncipher">enviar mensaje</button></br></div>
@@ -28,15 +37,7 @@
         <br><button id="buttoncipherRet">enviar mensaje</button></br>
 
 
-        <div id=ventana3>
-             <!--el usuario debe INGRESA MENSAJE CIFRADO, se inserta un cuadro de ingreso de texto-->
-             <div id=dialogo3><input id="newMessage" type="text"></div>
-             <!-- se imprime el MENSAJE DESIFRADO en un parrafo-->
-            <div id="dialogo4"><p id="decrypt"></p></p></div>
 
-       </div>
-       <!--se crea el botòn para LLAMAR A LA FUNCION que imprime el resultado de la fincion descifra-->
-       <br><button id="buttondescipher">descifrar</button></br>
 
     <script type="text/javascript" src=cipher.js>
     </script>
