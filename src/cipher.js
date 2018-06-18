@@ -80,4 +80,5 @@ decode: (str2)=>{
    return result2;
 }
 
+
 }
