@@ -4,6 +4,8 @@
      <link rel="stylesheet" href="style.css"/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--animate.css-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -13,43 +15,44 @@
   <body>
        <div class="container">
             <div class="row">
-                    <div class="col-12 titulo">
+                    <div class="col-12 titulo animated zoomIn delay-1s">
                               <h1 style= color:antiquewhite;>Cifrado Cesar</h1>
                     </div>
                </div> 
-               <div class="row">   
-                    <div class="col-6 input-group">
-                              <textarea class="form-control" aria-label="With textarea" id="message"></textarea>
-                    </div>
-                    
-                    <div class="col-6 v1" style=" background:white; max-width: 170px; max-height: 100px;" >
-                              <p id="encrypt"></p>
-                    </div>
-               </div>
                <div class="row">
-                         <div class=" col-12" >
-                                   <button id="buttoncipher">Cifrar mensaje</button>
-                                   </div>
-               </div>
+                    </div> 
+                    <div class="row">   
+                         <div class="col-6 input-group">
+                                   <textarea class="form-control" aria-label="With textarea"  id="newMessage"></textarea>
+                         </div>
+                         
+                         <div class="col-6 v1" style=" background:white; max-width: 170px; max-height: 200px;" >
+                                   <p id="decrypt"></p>
+                         </div>
+                    </div>
+                    <div class="row">
+                              <div class=" col-12" >
+                                        <button class="btn btn-dark" id="buttondescipher">Decifrar mensaje</button>
+                                        </div>
+                    </div>
+              
        </div>
 
        <div class="container">
-               <div class="row">
-                  </div> 
-                  <div class="row">   
-                       <div class="col-6 input-group">
-                                 <textarea class="form-control" aria-label="With textarea"  id="newMessage"></textarea>
-                       </div>
-                       
-                       <div class="col-6 v1" style=" background:white; max-width: 170px; max-height: 100px;" >
-                                 <p id="decrypt"></p>
-                       </div>
-                  </div>
-                  <div class="row">
-                            <div class=" col-12" >
-                                      <button  id="buttondescipher">Decifrar mensaje</button>
-                                      </div>
-                  </div>
+               <div class="row">   
+                         <div class="col-6 input-group">
+                                   <textarea class="form-control" aria-label="With textarea"  id="message"></textarea>
+                         </div>
+                         
+                         <div class="col-6 v1" style=" background:white; max-width: 170px; max-height: 200px;" >
+                                   <p id="encrypt"></p>
+                         </div>
+                         </div>
+                    <div class="row">
+                              <div class=" col-12" >
+                                        <button class="btn btn-dark" id="buttoncipher">Cifrar mensaje</button>
+                                        </div>
+                    </div>
           </div>
               
     <script type="text/javascript" src=cipher.js>

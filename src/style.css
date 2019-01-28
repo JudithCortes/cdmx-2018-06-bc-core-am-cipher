@@ -1,19 +1,19 @@
 
 html{
-  background-image: url(https://www.mactualidad.com/wp-content/uploads/2014/07/smooth-blaze.jpg);
+  background-image: url(https://user-images.githubusercontent.com/39841876/51811714-e6c89800-2273-11e9-9bb7-5a08c3951c7f.jpg);
 }
 body{
-  background-image: url(https://www.mactualidad.com/wp-content/uploads/2014/07/smooth-blaze.jpg);
+  background-image: url(https://user-images.githubusercontent.com/39841876/51811714-e6c89800-2273-11e9-9bb7-5a08c3951c7f.jpg);
 }
 .container
   {
-    margin-top: 40px;
-    background-image: url(https://www.mactualidad.com/wp-content/uploads/2014/07/smooth-blaze.jpg);
+    margin-top: 10px;
+    background-image: url(https://user-images.githubusercontent.com/39841876/51811714-e6c89800-2273-11e9-9bb7-5a08c3951c7f.jpg);
     text-align: center;
   }
 
 .titulo{
- margin-top: 60px;
+ margin-top: 10px;
   }
 
 h1{
@@ -26,4 +26,15 @@ h1{
 div{
   margin-top: 10px;
   text-align: center;
+}
+.input-group{
+  display: inline-block;
+  min-width: 100px;
+}
+#message{
+  height: 200px;
+}
+
+#newMessage{
+  height: 200px;
 }
