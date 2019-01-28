@@ -3,45 +3,63 @@
   <head>
      <link rel="stylesheet" href="style.css"/>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
     <title></title>
   </head>
   <body>
-         <h1>Cifrado Cesar</h1>
+       <div class="container">
+            <div class="row">
+                    <div class="col-12 titulo">
+                              <h1 style= color:antiquewhite;>Cifrado Cesar</h1>
+                    </div>
+               </div> 
+               <div class="row">   
+                    <div class="col-6 input-group">
+                              <textarea class="form-control" aria-label="With textarea" id="message"></textarea>
+                    </div>
+                    
+                    <div class="col-6 v1" style=" background:white; max-width: 170px; max-height: 100px;" >
+                              <p id="encrypt"></p>
+                    </div>
+               </div>
+               <div class="row">
+                         <div class=" col-12" >
+                                   <button id="buttoncipher">Cifrar mensaje</button>
+                                   </div>
+               </div>
+       </div>
 
-         <div id=ventana3>
-              <!--el usuario debe INGRESA MENSAJE CIFRADO, se inserta un cuadro de ingreso de texto-->
-              <div id=dialogo3><input id="newMessage" type="text"></div>
-              <!-- se imprime el MENSAJE DESIFRADO en un parrafo-->
-             <div id="dialogo4"><p id="decrypt"></p></p></div>
-        </div>
-        <!--se crea el botòn para LLAMAR A LA FUNCION que imprime el resultado de la fincion descifra-->
-        <br><button id="buttondescipher">descifrar</button></br>
-
-         <div id="ventana1">
-              <!--el usuario debe ingresar su mensaje, se inserta un cuadro de INGRESO TEXTO-->
-              <div id="dialogo1"><input id="message" type="text">
-              <!-- se imprime el MENSAJE DE RETORNO DESIFRADO en un parrafo-->
-              <div id="dialogo6"><p id="decryptRet"></p></p></div></div>
-         </div>
-         <!--se crea el botòn para evento que llama a la funcion que imprime el resultado retornado de window.cipher.cipher -->
-         <br><button id="buttoncipher">enviar mensaje</button></br></div>
-
-
-         <div id="ventana2">
-             <!-- se IMPRIME MENSAJE CIFRADO en un parrafo-->
-             <div id="dialogo2"><p id="encrypt"></p></div>
-             <!--el usuario debe ingresar su mensaje, se inserta un cuadro de INGRESO TEXTO-->
-             <div id="dialogo5"><input id="messageRet" type="text"></div>
-        </div>
-        <!--se crea el botòn para LLAMAR A LA FUNCION que imprime el resultado de la fincion descifra-->
-        <br><button id="buttoncipherRet">enviar mensaje</button></br>
-
-
-
-
+       <div class="container">
+               <div class="row">
+                  </div> 
+                  <div class="row">   
+                       <div class="col-6 input-group">
+                                 <textarea class="form-control" aria-label="With textarea"  id="newMessage"></textarea>
+                       </div>
+                       
+                       <div class="col-6 v1" style=" background:white; max-width: 170px; max-height: 100px;" >
+                                 <p id="decrypt"></p>
+                       </div>
+                  </div>
+                  <div class="row">
+                            <div class=" col-12" >
+                                      <button  id="buttondescipher">Decifrar mensaje</button>
+                                      </div>
+                  </div>
+          </div>
+              
     <script type="text/javascript" src=cipher.js>
     </script>
     <script type="text/javascript" src=index.js>
     </script>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+   
   </body>
 </html>
